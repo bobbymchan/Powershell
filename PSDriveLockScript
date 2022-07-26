@@ -1,0 +1,4 @@
+#Lock Drive Script
+
+Lock-Bitlocker -MountPoint "O:" -ForceDismount
+Lock-Bitlocker -MountPoint "P:" -ForceDismount
