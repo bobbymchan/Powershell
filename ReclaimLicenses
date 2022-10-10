@@ -1,0 +1,14 @@
+#Variables
+#$license = "<Specify Licenses"
+
+#Connect to Tenant
+
+Connect-MsolService
+
+#Goes through Users List and Remove Licenses
+
+#$x=Get-Content "Path: Doc.Txt"
+for ($i=0; $i -lt $x.Count; $i++)
+{
+Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses $license
+}
